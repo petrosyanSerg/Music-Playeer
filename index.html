@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="img/Logo/Icon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script/app.js" defer></script>
+  </head>
+  <body>
+    <div class="player">
+      <div class="wrapper">
+        <div class="details">
+          <div class="now_playing">Playing x Of y</div>
+          <div class="track_art"></div>
+          <div class="track_name">Track Name</div>
+          <div class="track_artist">Track Artist</div>
+        </div>
+        <div class="slider_container">
+          <div class="track_size_range">
+            <div class="current_time">00:00</div>
+            <input type="range" min="0" max="100" value="0" class="track" />
+            <div class="duration_time">00:00</div>
+          </div>
+          <div class="track_volume">
+            <i class="fa-solid fa-volume-low"></i>
+            <input type="range" min="0" max="100" value="70" class="volume" />
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="random_track_button">
+            <i class="fa-solid fa-shuffle"></i>
+          </div>
+          <div class="prev_track">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </div>
+          <div class="play_pause">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="next_track">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </div>
+          <div class="repeat">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+        </div>
+        <div class="wave" id="wave">
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
